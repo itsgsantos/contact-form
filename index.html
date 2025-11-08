@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Frontend Mentor | Contact form</title>
+</head>
+
+<body>
+  <article class="form-container">
+    <h1 class="title">Contact Us</h1>
+    <form id="form" class="form" method="">
+
+      <div class="">
+        <label for="firstName" class="required">First Name</label>
+        <input class="field" type="text" name="firstName" id="firstName" required aria-describedby="firstNameError" />
+        <span class="error" data-span="error">This field is required</span>
+      </div>
+
+      <div class="">
+        <label for="lastName" class="required">Last Name</label>
+        <input class="field " type="text" name="lastName" id="lastName" required aria-describedby="lastNameError" />
+        <span class="error" data-span="error">This field is required</span>
+      </div>
+
+      <div class="col-2">
+        <label for="email" class="required">Email Address</label>
+        <input class="field " type="email" name="email" id="email" required aria-describedby="emailError" />
+        <span class="error" data-span="error">Please enter a valid email address</span>
+      </div>
+
+      <div class="col-2">
+        <label id="queryType" class="required"> Query Type </label>
+        <div class="grid-2">
+          <div class="div-radio">
+            <input class="field" type="radio" name="queryType" id="generalEnquiry" data-queryType value="General Enquiry" required aria-describedby="queryTypeError" />
+            <label for="generalEnquiry" class="label-radio">General Enquiry</label>
+          </div>
+          <div class="div-radio">
+            <input class="field" type="radio" name="queryType" id="supportRequest" data-queryType value="Support Request" />
+            <label for="supportRequest" class="label-radio" aria-describedby="queryTypeError">Support Request</label>
+          </div>
+        </div>
+        <span id="queryTypeError" data-span="radio" class="error" data-span="error">Please select a query type</span>
+      </div>
+
+      <div class="msg">
+        <label for="message" class="required">Message</label>
+        <textarea class="field" name="message" id="message" required aria-describedby="messageError"></textarea>
+        <span class="error" data-span="error">This field is required</span>
+      </div>
+
+      <div class="terms">
+        <div class="terms-wrapper">
+          <input class="" type="checkbox" name="terms" id="terms" required />
+          <label for="terms" class="required" aria-describedby="termsError">I consent to being contacted by the team</label>
+        </div>
+        <span class="error" data-span="error" id="termsError">To submit this form, please conset to being contacted</span>
+      </div>
+      <button class="btn" id="submit">Submit</button>
+    </form>
+  </article>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
