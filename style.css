@@ -167,8 +167,8 @@ div.div-radio:nth-child(2) {
 }
 
 .div-radio input {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   position: absolute;
   top: 3px;
   left: 20px;
