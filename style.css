@@ -34,8 +34,8 @@ label {
 }
 
 .form-container {
-  margin: 60px;
-  padding: 30px;
+  margin: 1.5rem;
+  padding: 1.5rem;
   display: grid;
   border-radius: 12px;
   max-width: 600px;
